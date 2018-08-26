@@ -117,7 +117,7 @@ svg {
 }
 
 #fill-rect-3 {
-  width: 55%;
+  width: 65%;
 
   fill: #66949C;
   fill-opacity: 1;
@@ -133,7 +133,7 @@ svg {
 }
 
 #fill-rect-5 {
-  width: 45%;
+  width: 75%;
 
   fill: #66949C;
   fill-opacity: 1;
@@ -188,17 +188,19 @@ svg {
 
 .transition-cont {
   background : #666666;
-  height: 13%;
+  height: 5em;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .transition-cont h3 {
   font-family: Myriad Pro;
-  font-size: 1.5em;
+  font-size: 3em;
   color: #111111;
+
+  margin-left: 1em;
 }
 
 .projects-cont {
@@ -206,10 +208,24 @@ svg {
 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project {
   width: 85%;
+}
+
+.project-boundary {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.project-boundary-line {
+  width: 90%;
+  height: 2px;
+  background: #666666;
 }
 
 .project h2 {
@@ -269,6 +285,8 @@ svg {
 }
 
 .button {
+  display: block;
+  overflow: auto;
   font-family: Myriad Pro;
   font-size: 20px;
   white-space: nowrap;
@@ -277,6 +295,7 @@ svg {
   padding: 1% 2%;
   background-color: #D66436;
 
+  transition: background-color .2s;
   margin-left: 3%;
 }
 
